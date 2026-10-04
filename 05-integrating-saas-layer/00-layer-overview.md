@@ -10,7 +10,7 @@ Narrowing to sub-segments makes a "top 5 in NZ" answerable:
 | AP automation & invoice capture | Dext, Hubdoc (Xero), ApprovalMax, Lightyear, Tipalti |
 | Expense management | Emburse/Expensify, Pleo, Weel, Payhawk, SAP Concur |
 | AR / collections | Debtor Daddy (NZ), Chaser, Upflow, HighRadius |
-| Close, reconciliation & matching | BlackLine, FloQast, Trintech, Numeric |
+| ~~Close, reconciliation & matching~~ | **Moved (round 2)** to [Reporting → Consolidation & close](../01-reporting-layer/01-consolidation-and-close/00-sublayer-overview.md): BlackLine, FloQast researched; Trintech, Numeric considered |
 | Payroll & HR-to-GL | Employment Hero, iPayroll (NZ), Smartly (NZ), Workday HCM |
 | Treasury & cash forecasting | Kyriba, Agicap, Float, Fluidly |
 | Tax | Avalara, Vertex, ONESOURCE |

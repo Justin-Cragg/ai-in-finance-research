@@ -1,14 +1,23 @@
 # AI in Finance — Research Repository (NZ market)
 
-*Purpose: evidence base for two Deloitte presentations — (1) AI in financial reporting, (2) AI in virtual CFO services. Audience: CFO / Financial Controller. Round 1 researched 5 Oct 2026.*
+*Purpose: evidence base for two Deloitte presentations — (1) AI in financial reporting, (2) AI in virtual CFO services. Audience: CFO / Financial Controller. Round 1 researched 5 Oct 2026; round 2 (reporting layer split into three sub-layers + SME/vCFO tier) 5 Oct 2026.*
 
 ## Folder structure
 ```
 ai-finance-research/
 ├── README.md                        ← this file: framework, index, cross-layer themes
 ├── 01-reporting-layer/
-│   ├── 00-layer-overview.md         ← NZ top 5, method, SME/vCFO tier, themes
-│   ├── oracle-epm/  onestream/  workday-adaptive-planning/  workiva/  anaplan/
+│   ├── 00-layer-overview.md         ← three sub-layers, top 5 per sub-layer, themes
+│   ├── 01-consolidation-and-close/
+│   │   ├── 00-sublayer-overview.md
+│   │   ├── oracle-epm/  onestream/  blackline/  floqast/  cch-tagetik/
+│   ├── 02-fpa-and-management-reporting/
+│   │   ├── 00-sublayer-overview.md  ← enterprise top 5 + SME/vCFO tier
+│   │   ├── workday-adaptive-planning/  anaplan/  jedox/  ibm-planning-analytics/  prophix/
+│   │   └── sme-vcfo-tier/  fathom/  spotlight-reporting/
+│   └── 03-external-reporting/
+│       ├── 00-sublayer-overview.md  ← NZ context (no XBRL mandate, CRD narrowing)
+│       ├── workiva/  caseware/
 ├── 02-erp-layer/
 │   ├── 00-layer-overview.md
 │   ├── xero/  myob/  microsoft-dynamics-365/  sap/  oracle-netsuite-and-fusion/
@@ -30,7 +39,7 @@ Each tool folder contains `research.md` with: snapshot table, CFO executive summ
 | Data (Snowflake, Databricks) | Keep, expand | **Add Microsoft Fabric/Power BI** (the NZ default), AWS and Google. Make the **semantic layer** explicit and include BI here |
 | ERP (SAP Joule, Xero, NetSuite, Oracle) | Keep, relabel | Rename **"ERP & accounting systems"** (Xero isn't an ERP); **add Microsoft Dynamics 365** (largest NZ mid-market ERP); treat Oracle as one supplier (NetSuite + Fusion); note TechnologyOne for public sector |
 | Integrating SaaS | Defer, split | Break into sub-segments (AP, expenses, AR, close/recs, payroll, treasury, tax, iPaaS) — see placeholder |
-| Reporting (HFM, Workiva, Workday, Planful) | Keep, split | Three jobs: **consolidation & close / FP&A & management reporting / external reporting**. Add OneStream & Anaplan; Planful moved to "considered" (thin NZ presence). **Add an SME/vCFO tier** (Fathom, Spotlight, Syft/Xero) for deck 2 |
+| Reporting (HFM, Workiva, Workday, Planful) | Keep, split — **done in round 2** | Now three sub-layer folders: **consolidation & close / FP&A & management reporting / external reporting**, each with its own NZ top 5. Close/recs tools (BlackLine, FloQast) moved here from Integrating SaaS. Planful in "considered" (thin NZ presence). **SME/vCFO tier** (Fathom, Spotlight, Syft/Xero) researched inside FP&A for deck 2 |
 | General (Copilot, ChatGPT, Claude, Gemini) | Keep, reposition | It's the **front door on top of every layer**, not a peer layer. Added Perplexity as #5 |
 | *(missing)* | **Add** | **Agent orchestration & governance** — the control plane for agents (Copilot Studio/Agent 365, Oracle AI Agent Studio, Snowflake Agent Identity, Databricks AI Gateway, Workday Flex Credits) |
 
@@ -56,7 +65,10 @@ Each tool folder contains `research.md` with: snapshot table, CFO executive summ
 ## Top 5 by layer (summary)
 | Layer | 1 | 2 | 3 | 4 | 5 |
 |---|---|---|---|---|---|
-| **Reporting** | Oracle EPM (HFM→Cloud) | OneStream | Workday Adaptive | Workiva | Anaplan |
+| **Reporting → Consolidation & close** | Oracle EPM (HFM→FCCS, ARCS) | OneStream | BlackLine | FloQast | CCH Tagetik |
+| **Reporting → FP&A & mgmt reporting** | Workday Adaptive | Anaplan | Jedox | IBM Planning Analytics | Prophix |
+| **Reporting → SME / vCFO tier** | Fathom | Spotlight Reporting | Syft → Xero Analytics | — | — |
+| **Reporting → External reporting** | Workiva | Caseware | Oracle Narrative Reporting | Word/Excel + M365 Copilot | Sustainability data (Toitū, IBM Envizi) |
 | **ERP & accounting** | Xero | MYOB | Microsoft Dynamics 365 | SAP | Oracle (NetSuite + Fusion) |
 | **Data** | Microsoft Fabric/Power BI | Snowflake | Databricks | AWS | Google Cloud |
 | **General AI** | Microsoft 365 Copilot | ChatGPT | Claude | Gemini | Perplexity |
@@ -78,10 +90,11 @@ Each tool folder contains `research.md` with: snapshot table, CFO executive summ
 ## Deck mapping
 | Deck | Primary layers | Key tools |
 |---|---|---|
-| **AI in financial reporting** | Reporting (all three sub-layers), Data, ERP (enterprise), General | Oracle EPM, OneStream, Workiva, Workday, Fabric/Power BI, Snowflake, SAP, D365, Copilot |
-| **AI in virtual CFO services** | ERP (SME), Reporting SME tier, General | Xero, MYOB, Fathom, Spotlight, Syft, Claude, ChatGPT, Copilot |
+| **AI in financial reporting** | Reporting (all three sub-layers), Data, ERP (enterprise), General | Oracle EPM, OneStream, BlackLine, Workday Adaptive, Workiva, Caseware, Fabric/Power BI, Snowflake, SAP, D365, Copilot |
+| **AI in virtual CFO services** | ERP (SME), Reporting SME tier, General | Xero, MYOB, Fathom, Spotlight, Syft, FloQast (+Xero), Caseware, Claude, ChatGPT, Copilot |
 
 ## Caveats & next steps
 - Research reflects public sources to 5 Oct 2026; many features are preview/early-access or US-first — **check NZ availability before client use**.
 - Upcoming events likely to change content: **NetSuite SuiteWorld (25–28 Oct 2026)**; Anaplan CFO-office agent suite due ~Oct 2026; Workday Adaptive Decision Intelligence broader release later 2026; MYOB–Microsoft first features late 2026.
-- Suggested round 2: (a) SME/vCFO reporting tier deep-dives (Fathom, Spotlight, Syft/Xero Analytics); (b) Integrating SaaS sub-segments; (c) agent governance layer; (d) NZ case studies/quotes from Deloitte NZ practices.
+- Round 2 done: reporting layer split into three sub-layers; SME/vCFO tier (Fathom, Spotlight) researched (former item (a)).
+- Suggested next: (b) Integrating SaaS sub-segments (close/recs now covered under Reporting); (c) agent governance layer; (d) NZ case studies/quotes from Deloitte NZ practices; (e) confirm NZ availability of US-first agents (Caseware Disclosure Checklist, Workiva Benchmarking) and NZ data regions.

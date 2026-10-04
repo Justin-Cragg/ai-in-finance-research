@@ -1,6 +1,6 @@
 # Workday Adaptive Planning (and Workday Financials agents)
 
-*Layer: Reporting (FP&A, management reporting, consolidation-lite) · Last researched: 5 Oct 2026*
+*Layer: Reporting → **FP&A & management reporting** (plus a consolidation-lite capability) · Last researched: 5 Oct 2026*
 
 | | |
 |---|---|

@@ -1,6 +1,6 @@
 # Oracle EPM (Hyperion HFM → Oracle Fusion Cloud EPM)
 
-*Layer: Reporting (consolidation, close, planning, management & narrative reporting) · Last researched: 5 Oct 2026*
+*Layer: Reporting → **Consolidation & close** (primary home; Oracle EPM Planning and Narrative Reporting also feature in the FP&A and external-reporting sub-layers) · Last researched: 5 Oct 2026*
 
 | | |
 |---|---|

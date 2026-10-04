@@ -1,6 +1,6 @@
 # OneStream
 
-*Layer: Reporting (unified consolidation, close, planning, reporting) · Last researched: 5 Oct 2026*
+*Layer: Reporting → **Consolidation & close** (primary home; OneStream planning and reporting also feature in the FP&A sub-layer) · Last researched: 5 Oct 2026*
 
 | | |
 |---|---|

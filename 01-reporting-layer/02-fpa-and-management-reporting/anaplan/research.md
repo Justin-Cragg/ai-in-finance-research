@@ -1,6 +1,6 @@
 # Anaplan
 
-*Layer: Reporting (connected planning — FP&A, workforce, sales, supply chain) · Last researched: 5 Oct 2026*
+*Layer: Reporting → **FP&A & management reporting** (connected planning: finance, workforce, sales, supply chain) · Last researched: 5 Oct 2026*
 
 | | |
 |---|---|

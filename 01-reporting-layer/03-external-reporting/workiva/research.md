@@ -1,6 +1,6 @@
 # Workiva
 
-*Layer: Reporting (external/statutory reporting, annual reports, XBRL, sustainability/climate statements, GRC) · Last researched: 5 Oct 2026*
+*Layer: Reporting → **External reporting** (annual reports, XBRL, sustainability/climate statements, GRC) · Last researched: 5 Oct 2026*
 
 | | |
 |---|---|
